@@ -1,10 +1,9 @@
 // src/api/comments.ts
-
 export interface Comment {
   id: number;
   text: string;
-  created_at: string;
   author: string;
+  created_at: string;
 }
 
 const BASE_URL = "http://127.0.0.1:8000/api/comments/";

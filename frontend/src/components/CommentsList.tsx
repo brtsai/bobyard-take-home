@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-import { Comment, updateComment } from "../api/comments";
+import { updateComment } from "../api/comments";
+
+interface Comment {
+  id: number;
+  text: string;
+  author: string;
+  created_at: string;
+}
 
 interface CommentsListProps {
   comments: Comment[];
-  onUpdate: (updated: Comment) => void; // callback to update state in App
+  onUpdate: (updated: Comment) => void;
 }
 
 const CommentsList: React.FC<CommentsListProps> = ({ comments, onUpdate }) => {
@@ -54,4 +61,4 @@ const CommentsList: React.FC<CommentsListProps> = ({ comments, onUpdate }) => {
 };
 
 export default CommentsList;
-;
+
