@@ -24,6 +24,8 @@ cd bobyard-take-home
 ## 2. Set up the Django backend
 
 ```bash
+cd myproject
+
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
