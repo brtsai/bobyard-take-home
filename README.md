@@ -23,13 +23,19 @@ cd bobyard-take-home
 
 ## 2. Set up the Django backend
 
+Create the Python Virtual Environment
+
 ```bash
 cd myproject
 
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
+```
 
+Install Dependencies and run server
+
+```bash
 # Upgrade pip
 pip install --upgrade pip
 
