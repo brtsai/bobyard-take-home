@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import hello
+from .views import hello, comments_list, comment_detail 
 
 urlpatterns = [
     path("hello/", hello),
